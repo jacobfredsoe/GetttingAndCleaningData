@@ -3,7 +3,7 @@
 ###Files contained in this repository:
 - **README.md:** This file, describing the other files
 - **CodeBook.md:** Description of the variables, the data, and any transformations done to the data
-- **run_analysis.R**: R script that does produces the tidyData.txt
+- **run_analysis.R**: R script that produces the tidyData.txt
 - **tidyData.txt:** Tidy data produced by the run_analysis.R
 - **UCIDataset\activity_labels.txt:** Links the class labels with their activity name
 - **UCIDataset\features.txt:** List of all features

@@ -24,7 +24,7 @@ x_train = mutate(x_train, SubjectID = unlist(subject_train), ActivityID = factor
 
 # Merge the test and train set, based on SubjectID and ActivityID
 mergedData = join(x_test, x_train, by = c("SubjectID", "ActivityID"), type = "full")
-colnames(mergedData)[1:(ncol(x_test)-2)] = as.character(features$V2) #Renaming the columns to fit with the feature, and 
+colnames(mergedData)[1:(ncol(x_test)-2)] = as.character(features$V2) #Renaming the columns to fit with the feature
 
 # Extract the mean and standard deviation data
 meanCol = grep("mean", colnames(mergedData)) # Columns with mean
@@ -56,6 +56,3 @@ for(Id in sort(unique(meanStdData$SubjectID))) {
 
 ### Save data to file ###
 write.table(results, "tidyData.txt", row.names = FALSE)
-
-
-

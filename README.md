@@ -1,6 +1,23 @@
 ## README.md
 
-###Files contained in this repository:
+### Data obtained from:
+
+Human Activity Recognition Using Smartphones Dataset  
+Version 1.0  
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.  
+Smartlab - Non Linear Complex Systems Laboratory  
+DITEN - Università degli Studi di Genova.  
+Via Opera Pia 11A, I-16145, Genoa, Italy.  
+activityrecognition@smartlab.ws  
+www.smartlab.ws  
+
+### Purpose
+To create a dataset by first combining the test and train datasets and then 
+subsetting the mean and standard deviation for each feature. Then a tidy dataset
+is created from the average of each variable for each activity and each subject.
+
+### Files contained in this repository:
 - **README.md:** This file, describing the other files
 - **CodeBook.md:** Description of the variables, the data, and any transformations done to the data
 - **run_analysis.R**: R script that produces the tidyData.txt
